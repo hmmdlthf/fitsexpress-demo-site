@@ -97,7 +97,7 @@
 
         function sendWhatsappMessage() {
             message_text = document.getElementById('chat__input').value;
-            const url = new URL(`https://wa.me/94775742272/?text=${message_text}`);
+            const url = new URL(`https://wa.me/94765758007/?text=${message_text}`);
             //   fbq('track', 'Contact');
             //   gtag('event', 'SendWhatsappMessage', {
             //     type: "whatsapp"
