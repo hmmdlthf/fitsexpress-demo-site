@@ -65,6 +65,7 @@
         .section__sub {
             font-weight: 700;
             color: #818181;
+            text-transform: uppercase;
         }
 
         .section__title {
@@ -100,6 +101,10 @@
         .section__bottom {
             align-items: flex-start;
             text-align: left;
+
+            .section__title {
+                font-size: 2rem;
+            }
         }
 
         &.section__reverse {
