@@ -1,0 +1,61 @@
+:root {
+  --black: #000;
+  --bg-dark: hwb(201 4% 86%);
+  --bg: hwb(201 5% 80%);
+  --bg-light: hwb(200 6% 74%);
+  --color-1: hwb(40 19% 3%);
+  --color-2: hwb(40 19% 1%);
+  --color-3: hwb(40 19% 5%);
+  --color-1-transaparent: #f7b5308c;
+  --black-1: hwb(47 25% 70%);
+  --shadow: 0.3rem 0.3rem 0.6rem var(--bg-light),
+  -0.2rem -0.2rem 0.5rem var(--bg-dark);
+  --inner-shadow: inset 0.3rem 0.3rem 0.6rem var(--bg-light),
+  inset -0.2rem -0.2rem 0.5rem var(--bg-dark);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer {
+  display: grid;
+  grid-template-areas: "social social" "copyright footer__logo";
+  width: 100%;
+  max-width: 900px;
+  align-items: center;
+}
+footer .footer .copyright {
+  grid-area: copyright;
+  padding: 1rem;
+  font-size: 1rem;
+}
+footer .footer .social {
+  grid-area: social;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+footer .footer .social .item svg {
+  height: 2rem;
+  width: 2rem;
+}
+footer .footer .footer__logo {
+  grid-area: footer__logo;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .footer .footer__logo img {
+  height: 2rem;
+}
+
+@media (min-width: 768px) {
+  footer .footer {
+    grid-template-areas: "copyright social footer__logo";
+  }
+}/*# sourceMappingURL=footer.css.map */

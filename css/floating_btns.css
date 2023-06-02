@@ -1,0 +1,44 @@
+.fbtns {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.fbtns > * + * {
+  margin-top: 1rem;
+}
+.fbtns .fbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 0.5rem;
+  background: var(--color-1);
+  transition: scale 0.3s ease-in-out;
+  cursor: pointer;
+}
+.fbtns .fbtn svg {
+  height: 1rem;
+  width: 1rem;
+  color: var(--bg-light);
+}
+.fbtns .fbtn:hover {
+  scale: 1.1;
+}
+.fbtns .fbtn:active {
+  scale: 0.5;
+}
+.fbtns #whatsapp_btn {
+  height: 3rem;
+  width: 3rem;
+  animation: btnenlarge 2s ease-in-out infinite;
+}
+.fbtns #whatsapp_btn svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}/*# sourceMappingURL=floating_btns.css.map */

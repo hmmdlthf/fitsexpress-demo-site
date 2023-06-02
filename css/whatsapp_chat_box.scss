@@ -1,0 +1,177 @@
+.whatsapp__chat__box {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    z-index: 7;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 1rem;
+
+    .chat__close__btn {
+        position: absolute;
+        top: -.5rem;
+        right: -.5rem;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem;
+        background-color: var(--bg-dark);
+        border-radius: 50%;
+        cursor: pointer;
+
+        svg {
+            height: 1rem;
+            width: 1rem;
+            color: var(--color-1);
+        }
+    }
+
+    .chat__head {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-block: 1rem;
+        padding-inline: 1rem;
+        background-color: #202C33;
+        color: #fff;
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        >*+* {
+            margin-left: .5rem;
+        }
+
+        .chat__profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 30px;
+            padding: .5rem;
+            border-radius: 50%;
+            background-color: var(--color-1);
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .chat__headText {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+
+            >*+* {
+                margin-top: .5rem;
+            }
+
+            .chat__name {
+                font-size: .7rem;
+            }
+
+            .chat__availability {
+                font-size: .5rem;
+            }
+        }
+    }
+
+    .chat__display {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-image: url("/images/whatsapp_background.jpg");
+        width: 100%;
+
+        .chat__gapLarge {
+            height: 2rem;
+        }
+
+        .chat__gapSmall {
+        }
+
+        .message__block__in {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .message {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-inline: .5rem;
+                padding-block: .5rem;
+                position: relative;
+                background-color: #202C33;
+                margin-inline: .5rem;
+                margin-block: .5rem;
+                border-radius: .5rem;
+                border-top-left-radius: 0;
+
+                .side__triangle {
+                    position: absolute;
+                    top: 0;
+                    right: 100%;
+
+                    svg {
+                        color: #202C33;
+                    }
+                }
+
+                .message__text {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: column;
+                    color: #fff;
+                    font-size: .7rem;
+                }
+            }
+
+        }
+    }
+
+    .chat__input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-block: .5rem;
+        padding-inline: 1rem;
+        background-color: #202c33;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        >*+* {
+            margin-left: .5rem;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            background-color: #2a3942;
+            padding-block: 1rem;
+            padding-inline: 1rem;
+            border-radius: 1rem;
+            color: #fff;
+            outline: none;
+        }
+
+        .send__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                color: #8696a0;
+            }
+        }
+
+    }
+}

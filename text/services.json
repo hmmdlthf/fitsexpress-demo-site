@@ -1,0 +1,24 @@
+{
+    "services": [
+        {
+            "img": "/images/services/photo-1627309366653-2dedc084cdf1.png",
+            "title": "Expert Architecture Services",
+            "des": "Our experienced architects provide personalized design solutions that turn your dreams into reality."
+        },
+        {
+            "img": "/images/services/photo-1627309366653-2dedc084cdf1.png",
+            "title": "Expert Architecture Services",
+            "des": "Our experienced architects provide personalized design solutions that turn your dreams into reality."
+        },
+        {
+            "img": "/images/services/photo-1627309366653-2dedc084cdf1.png",
+            "title": "Expert Architecture Services",
+            "des": "Our experienced architects provide personalized design solutions that turn your dreams into reality."
+        },
+        {
+            "img": "/images/services/photo-1627309366653-2dedc084cdf1.png",
+            "title": "Expert Architecture Services",
+            "des": "Our experienced architects provide personalized design solutions that turn your dreams into reality."
+        }
+    ]
+}

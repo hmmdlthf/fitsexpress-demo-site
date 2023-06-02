@@ -1,0 +1,140 @@
+:root {
+  --black: #000;
+  --bg-dark: hwb(201 4% 86%);
+  --bg: hwb(201 5% 80%);
+  --bg-light: hwb(200 6% 74%);
+  --color-1: hwb(40 19% 3%);
+  --color-2: hwb(40 19% 1%);
+  --color-3: hwb(40 19% 5%);
+  --color-1-transaparent: #f7b5308c;
+  --black-1: hwb(47 25% 70%);
+  --shadow: 0.3rem 0.3rem 0.6rem var(--bg-light),
+  -0.2rem -0.2rem 0.5rem var(--bg-dark);
+  --inner-shadow: inset 0.3rem 0.3rem 0.6rem var(--bg-light),
+  inset -0.2rem -0.2rem 0.5rem var(--bg-dark);
+}
+
+.hero {
+  width: 100%;
+  max-width: 400px;
+}
+.hero h1 {
+  font-size: 2rem;
+}
+.hero .des {
+  font-size: 1rem;
+  font-size: 20px;
+  margin-top: 1rem;
+  max-width: 65ch;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2rem;
+}
+form > * + * {
+  margin-top: 1rem;
+}
+form .form__group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .form__group .form__control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+form .form__group .form__control label {
+  text-transform: capitalize;
+}
+form .form__group .form__control input,
+form .form__group .form__control textarea,
+form .form__group .form__control button {
+  margin-top: 0.2rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+form .form__group .form__control input,
+form .form__group .form__control textarea {
+  background-color: #F1F1F1;
+}
+
+.section__ribon {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-block: 2rem;
+}
+.section__ribon .items {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.section__ribon .items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  text-align: center;
+}
+.section__ribon .items .item > * + * {
+  margin-top: 0.5rem;
+}
+.section__ribon .items .item .title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.section__ribon iframe {
+  height: 300px;
+  width: 100%;
+}
+.section__ribon img {
+  height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0.25rem;
+}
+.section__ribon :first-child {
+  padding-left: 0.5rem;
+}
+.section__ribon :last-child {
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    max-width: 1200px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .section__ribon {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .section__ribon img,
+  .section__ribon iframe {
+    width: 50%;
+  }
+}/*# sourceMappingURL=contact.css.map */

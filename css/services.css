@@ -1,0 +1,80 @@
+:root {
+  --black: #000;
+  --bg-dark: hwb(201 4% 86%);
+  --bg: hwb(201 5% 80%);
+  --bg-light: hwb(200 6% 74%);
+  --color-1: hwb(40 19% 3%);
+  --color-2: hwb(40 19% 1%);
+  --color-3: hwb(40 19% 5%);
+  --color-1-transaparent: #f7b5308c;
+  --black-1: hwb(47 25% 70%);
+  --shadow: 0.3rem 0.3rem 0.6rem var(--bg-light),
+  -0.2rem -0.2rem 0.5rem var(--bg-dark);
+  --inner-shadow: inset 0.3rem 0.3rem 0.6rem var(--bg-light),
+  inset -0.2rem -0.2rem 0.5rem var(--bg-dark);
+}
+
+.hero {
+  width: 100%;
+  max-width: 400px;
+}
+.hero h1 {
+  font-size: 2rem;
+}
+.hero .des {
+  font-size: 1rem;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.services {
+  width: 100%;
+  max-width: 1200px;
+  margin-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.services > * + * {
+  margin-top: 2rem;
+}
+.services .service {
+  width: 100%;
+  max-width: 500px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.services .service > * + * {
+  margin-top: 1rem;
+}
+.services .service img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services .service .service__title {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .hero {
+    max-width: 1200px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .services {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .services > * + * {
+    margin-top: 0;
+  }
+  .services .service {
+    margin: 1rem;
+  }
+}/*# sourceMappingURL=services.css.map */

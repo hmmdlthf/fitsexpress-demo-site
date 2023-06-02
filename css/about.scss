@@ -1,0 +1,73 @@
+@import 'variables';
+
+h1 {
+    font-size: 2rem;
+}
+
+.section__ribon {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 2rem;
+
+    img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        padding: .25rem;
+    }
+
+    .team__item {
+        margin: .5rem;
+
+        >* + * {
+            margin-top: .5rem;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .item__title {
+            font-weight: 700;
+        }
+
+        .item__role {
+
+        }
+    }
+    
+    :first-child {
+        padding-left: .5rem;
+    }
+
+    :last-child {
+        padding-right: .5rem;
+    }
+}
+
+@media (min-width: $break-md) {
+    h1 {
+        font-size: 3rem;
+    }
+    .section__ribon {
+        flex-direction: row;
+        flex-wrap: wrap;
+        img {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: $break-xl) {
+    .section__ribon {
+        flex-direction: row;
+        img {
+            width: 25%;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.btn,
+button.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-inline: 2rem;
+    padding-block: .5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    background-color: var(--color-1);
+
+    &:hover {
+        background-color: #000;
+        color: var(--color-1);
+    }
+}

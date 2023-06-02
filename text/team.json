@@ -1,0 +1,24 @@
+{
+    "team": [
+        {
+            "img": "/images/about/team/team1.png",
+            "name": "esther bryce",
+            "role": "founder / interior designer"
+        },
+        {
+            "img": "/images/about/team/team2.png",
+            "name": "Lianne Wilson",
+            "role": "Broker"
+        },
+        {
+            "img": "/images/about/team/team3.png",
+            "name": "Jaden Smith",
+            "role": "Architect"
+        },
+        {
+            "img": "/images/about/team/team4.png",
+            "name": "Jessica Kim",
+            "role": "Photographer"
+        }
+    ]
+}
